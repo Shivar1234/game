@@ -1,623 +1,79 @@
-/* Basic reset and styling */
+/* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-/* Body background */
-body {
-  background-color: #111;
-  color: #fff;
-}
-
-/* Header Section */
-.header {
-  width: 100%;
-  padding: 15px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #1b1b1b; /* Dark background for header */
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Logo Styling */
-.logo a {
-  color: #e50914; /* Bold color for logo */
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* Navigation Links */
-.nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-.nav ul li a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s;
-}
-
-.nav ul li a:hover {
-  color: #fff;
-}
-
-/* Sign Up Button */
-.signup-btn {
-  padding: 10px 20px;
-  background-color: #e50914;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.signup-btn:hover {
-  background-color: #b20710;
-}
-
-
-/* Basic reset and styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #111;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
 
-/* Hero Section */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-image: url('https://example.com/your-background-image.jpg'); /* Replace with your own image URL */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
+.container {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* Overlay to add a dark effect */
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
-}
-
-/* Content inside the hero section */
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 600px;
-  padding: 20px;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  color: #dcdcdc;
-}
-
-/* CTA Button */
-.hero-btn {
-  display: inline-block;
-  padding: 15px 30px;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #e50914; /* Netflix red for a bold look */
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.hero-btn:hover {
-  background-color: #b20710;
-}
-
-
-/* Body styling */
-body {
-  background-color: #111;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
-}
-
-/* Platform Showcase Section */
-.platform-showcase {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.platform-showcase h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  color: #e50914;
-}
-
-/* Platform Cards Container */
-.platform-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* Individual Platform Card */
-.platform-card {
-  background-color: #1b1b1b;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  color: #dcdcdc;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-}
-
-.platform-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-}
-
-/* Platform Logo */
-.platform-card img {
-  width: 60px;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-/* Platform Title */
-.platform-card h3 {
-  font-size: 1.3rem;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-/* Platform Description */
-.platform-card p {
-  font-size: 0.9rem;
-  margin-bottom: 20px;
-  color: #ccc;
-}
-
-/* Explore Button */
-.explore-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #e50914;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  transition: background-color 0.3s;
-}
-
-.explore-btn:hover {
-  background-color: #b20710;
-}
-
-
-/* Body styling */
-body {
-  background-color: #111;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
-
-/* Top Games Section */
-.top-games {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.top-games h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  color: #e50914;
-}
-
-/* Game Cards Container */
-.game-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* Individual Game Card */
-.game-card {
-  background-color: #1b1b1b;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-}
-
-.game-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-}
-
-/* Game Image */
-.game-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-/* Game Info */
-.game-info {
-  padding: 20px;
-  text-align: left;
-}
-
-.game-info h3 {
-  font-size: 1.3rem;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.game-info p {
-  font-size: 0.9rem;
-  color: #ccc;
-  margin-bottom: 20px;
-}
-
-.game-info span {
-  color: #e50914;
-}
-
-/* Play Button */
-.play-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #e50914;
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.9rem;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.play-btn:hover {
-  background-color: #b20710;
-}
-
-/* Body styling */
-body {
-  background-color: #111;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
-
-/* Features and Benefits Section */
-.features {
-  padding: 60px 20px;
-  text-align: center;
-  color: #fff;
-}
-
-.features h2 {
-  font-size: 2rem;
-  color: #e50914;
-  margin-bottom: 10px;
-}
-
-.section-description {
-  font-size: 1rem;
-  color: #ccc;
-  margin-bottom: 40px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/* Feature Cards Container */
-.feature-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* Individual Feature Card */
-.feature-card {
-  background-color: #1b1b1b;
-  border-radius: 10px;
-  padding: 30px 20px;
-  text-align: center;
-  color: #dcdcdc;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-}
-
-/* Feature Icon */
-.feature-card img {
-  width: 50px;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-/* Feature Title */
-.feature-card h3 {
-  font-size: 1.3rem;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-/* Feature Description */
-.feature-card p {
-  font-size: 0.9rem;
-  color: #ccc;
-}
-
-
-/* Body styling */
-body {
-  background-color: #111;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
-
-/* Social Media and Community Section */
-.community {
-  padding: 60px 20px;
-  text-align: center;
-  color: #fff;
-}
-
-.community h2 {
-  font-size: 2rem;
-  color: #e50914;
-  margin-bottom: 10px;
-}
-
-.section-description {
-  font-size: 1rem;
-  color: #ccc;
-  margin-bottom: 40px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/* Social Links Container */
-.social-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-/* Individual Social Media Card */
-.social-card {
-  background-color: #1b1b1b;
-  border-radius: 10px;
-  padding: 20px;
-  width: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: #fff;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-}
-
-.social-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-}
-
-/* Social Media Icon */
-.social-card img {
-  width: 40px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-/* Social Media Text */
-.social-card span {
-  font-size: 1rem;
-  color: #e50914;
-}
-
-/* Footer Section */
-.footer {
-  background-color: #1b1b1b;
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-/* Footer Links */
-.footer-links {
-  flex: 1;
-  margin: 10px;
-}
-
-.footer-links h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #e50914; /* Highlighted color */
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li {
-  margin: 5px 0;
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: #ccc;
-  transition: color 0.3s;
-}
-
-.footer-links a:hover {
-  color: #e50914; /* Highlighted color on hover */
-}
-
-/* Footer Social Icons */
-.footer-social {
-  flex: 1;
-  margin: 10px;
-}
-
-.footer-social h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #e50914; /* Highlighted color */
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 10px; /* Space between icons */
-}
-
-.social-icons a img {
-  width: 30px; /* Icon size */
-  height: auto;
-}
-
-/* Footer Bottom */
-.footer-bottom {
-  border-top: 1px solid #444;
-  padding-top: 10px;
-}
-
-.footer-bottom p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #ccc;
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-links, .footer-social {
+header h1 {
+    color: #00ffcc;
+    font-size: 2.5rem;
     margin-bottom: 20px;
-  }
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #00ffcc;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+.speed-test {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
 }
 
-.testimonials {
-  background-color: #1a1a1a; /* Dark background */
-  color: #f0f0f0; /* Light text color */
-  padding: 50px 20px;
-  text-align: center;
+button {
+    background-color: #00ffcc;
+    border: none;
+    color: #121212;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+    transition: all 0.3s ease;
 }
 
-.testimonials h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.9);
 }
 
-.testimonial-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
+.result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #00ffcc;
 }
 
-.testimonial {
-  background-color: #333; /* Slightly lighter dark background for testimonial card */
-  border-radius: 8px;
-  padding: 20px;
-  max-width: 400px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #b0b0b0;
 }
 
-.user-info {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
 
-.avatar {
-  border-radius: 50%;
-  margin-right: 15px;
-}
+    header h1 {
+        font-size: 2rem;
+    }
 
-h3 {
-  margin: 0;
-  font-size: 1.2em;
-}
-
-.platform {
-  font-size: 0.9em;
-  color: #ccc; /* Lighter color for platform text */
-}
-
-.testimonial-text {
-  font-size: 1em;
-  line-height: 1.5;
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
 }

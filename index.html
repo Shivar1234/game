@@ -1,126 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gaming Platform Hub</title>
-  <link rel="stylesheet" href="styles.css
-  ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Header Section -->
-  <header class="header">
-    <div class="logo">
-      <a href="#">GameHub</a>
-    </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#platforms">Platforms</a></li>
-        <li><a href="#games">Games</a></li>
-        <li><a href="#community">Community</a></li>
-      </ul>
-    </nav>
-    <a href="#signup" class="signup-btn">Sign Up</a>
-  </header>
-  
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Your Gateway to the World of Gaming</h1>
-      <p>Explore, play, and connect on the most popular gaming platforms all in one place.</p>
-      <a href="#platforms" class="hero-btn">Get Started</a>
-    </div>
-  </section>
-
-  <!-- Platform Showcase Section -->
-  <section class="platform-showcase">
-    <h2>Discover Your Favorite Platforms</h2>
-    <div class="platform-cards">
-      
-      <!-- Platform Card 1 -->
-      <div class="platform-card">
-        <img src="C:\Users\Shiva\Downloads\Steam_icon_logo.svg.png" alt="Steam Logo">
-        <h3>Steam</h3>
-        <p>Home to thousands of AAA and indie games. Connect with friends and explore new releases.</p>
-        <a href="#steam" class="explore-btn">Explore</a>
-      </div>
-
-      <!-- Platform Card 2 -->
-      <div class="platform-card">
-        <img src="C:\Users\Shiva\Downloads\Xbox_one_logo.svg.png" alt="Xbox Logo">
-        <h3>Xbox</h3>
-        <p>Play the latest titles and exclusive games on the Xbox platform. Experience high-quality gaming.</p>
-        <a href="#xbox" class="explore-btn">Explore</a>
-      </div>
-
-      <!-- Platform Card 3 -->
-      <div class="platform-card">
-        <img src="C:\Users\Shiva\Downloads\Playstation_logo_colour.svg.png" alt="PlayStation Logo">
-        <h3>PlayStation</h3>
-        <p>Discover the world of PlayStation with epic games and exclusive releases.</p>
-        <a href="#playstation" class="explore-btn">Explore</a>
-      </div>
-
-      <!-- Platform Card 4 -->
-      <div class="platform-card">
-        <img src="C:\Users\Shiva\Downloads\Epic_Games_logo.svg.png" alt="Epic Games Logo">
-        <h3>Epic Games</h3>
-        <p>Find free games, big titles, and exclusive offers on the Epic Games Store.</p>
-        <a href="#epic" class="explore-btn">Explore</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Top Games Section -->
-  <section class="top-games">
-    <h2>Trending Games Across Platforms</h2>
-    <div class="game-cards">
-      
-      <!-- Game Card 1 -->
-      <div class="game-card">
-        <img src="C:\Users\Shiva\Downloads\ab6761610000e5eb08155a63a9480356177d3259.jpg" alt="Game 1 Cover">
-        <div class="game-info">
-          <h3>Free Fire</h3>
-          <p>Available on: <span>Steam, Xbox</span></p>
-          <a href="#play1" class="play-btn">Play Now</a>
+    <div class="container">
+        <header>
+            <h1>Internet Speed Test</h1>
+        </header>
+        <div class="speed-test">
+            <button id="start-test" onclick="startSpeedTest()">Start Test</button>
+            <div class="result">
+                <p id="speed-result">Speed: --</p>
+            </div>
         </div>
-      </div>
-
-      <!-- Game Card 2 -->
-      <div class="game-card">
-        <img src="C:\Users\Shiva\Downloads\Grand_Theft_Auto_V.png" alt="Game 2 Cover">
-        <div class="game-info">
-          <h3>Grand Theft Auto V </h3>
-          <p>Available on: <span>PlayStation, Epic Games</span></p>
-          <a href="#play2" class="play-btn">Play Now</a>
-        </div>
-      </div>
-
-      <!-- Game Card 3 -->
-      <div class="game-card">
-        <img src="C:\Users\Shiva\Downloads\Battleground_Mobile_India.webp.png" alt="Game 3 Cover">
-        <div class="game-info">
-          <h3>Battlegrounds Mobile India</h3>
-          <p>Available on: <span>Steam, Xbox</span></p>
-          <a href="#play3" class="play-btn">Play Now</a>
-        </div>
-      </div>
-
-      <!-- Game Card 4 -->
-      <div class="game-card">
-        <img src="C:\Users\Shiva\Downloads\channels4_profile.jpg" alt="Game 4 Cover">
-        <div class="game-info">
-          <h3>Clash of Clans </h3>
-          <p>Available on: <span>Steam, Epic Games</span></p>
-          <a href="#play4" class="play-btn">Play Now</a>
-        </div>
-      </div>
-
+        <footer>
+            <p>Powered by Devloper Shivendra Rai</p>
+        </footer>
     </div>
-  </section>
 
-
+    <script src="script.js"></script>
+</body>
 </html>
